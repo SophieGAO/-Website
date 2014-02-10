@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<!--CSS-->
+<link href="css/sophie.css" rel="stylesheet" type="text/css">
+
+<!--JS-->
+<script type="text/javascript" charset="utf-8" src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/load_text.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/jquery.cycle.all.js"></script>
+<script>
+	$("document").ready(function() {
+        $("#travel-photos").cycle({
+			fx:	'fade',
+			speed:	1000,
+			delay:2000,
+			pause:1,
+			next:	'#next',
+			prev:	'#prev'	
+		});
+    });
+</script>
+</head>
+
+<body id="home">
+<div id="wrapper">
+  <div id="header">
+    <ul class="fix">
+      <li><a href="index.htm" class="selected">Home</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="#">Interests</a></li>
+      <li><a href="#">Dream</a></li>
+      <li><a href="#">New Things</a></li>
+      <li><a href="mailto:wsbcsn@hotmail.com?Subject=Hello%20Sophie!&amp;body=Glad%20to%20meet%20you!" target="_top"><em>Contact me</em></a></li>
+    </ul>
+    <h1>Florida</h1>
+    <h2>My journey in US.</h2>
+    <form action=" http://google.com/search"  method="GET" accept-charset="utf-8">
+      <fieldset>
+        <legend></legend>
+        <label for="search">search</label>
+        <input type="text" class="search" name="q" value="search" title="search"/>
+        <input type="submit" value="go">
+      </fieldset>
+    </form>
+    <div class="clear"></div>
+  </div>
+  <!--End of header-->
+  <div id="main">
+    <div id="travel">
+      <div id="travel-photos">      
+       <img src="images/disney-parade.jpg" width="710" height="430" alt="Parade">
+       <img src="images/mikey.jpg" width="700" height="430" alt="Mikey">
+       <img src="images/boat.jpg" width="700" height="430" alt="boat">
+       <img src="images/turtle.jpg" width="700" height="430" alt="turtle">
+       </div>
+     	<a href="#d" id="prev">Previous</a>
+       <a href="#d" id="next">Next</a> 
+       </div>
+    <div id="video">
+      <h3>Video: Sunshine & beach</h3>
+      <a href="video.html"><img src="images/florida-beaches.jpg" width="310" height="200" alt="Beach"></a> </div>
+    <div id="history">
+      <h3>Historic map of Florida</h3>
+      <a href="#"><img src="images/floridamap.jpg" width="330" height="200" alt="Historic Map of Florida"></a> </div>
+    <div id="attractions">
+      <h3>Popular attractions</h3>
+      <ul>
+        <li><a href="http://www.tripadvisor.com/Attraction_Review-g34515-d258685-Reviews-Universal_s_Islands_of_Adventure-Orlando_Florida.html">Universal's Islands of Adventure</a></li>
+        <li><a href="http://www.tripadvisor.com/Attraction_Review-g34515-d102432-Reviews-Universal_Studios_Florida-Orlando_Florida.html">Universal Studios Florida</a></li>
+        <li><a href="http://www.tripadvisor.com/Attraction_Review-g34515-d143394-Reviews-Walt_Disney_World-Orlando_Florida.html">Walt Disney World</a></li>
+        <li><a href="http://www.tripadvisor.com/Attraction_Review-g34515-d143395-Reviews-Magic_Kingdom-Orlando_Florida.html">Magic Kingdom</a></li>
+        <li><a href="http://www.tripadvisor.com/Attraction_Review-g34515-d1597182-Reviews-John_F_Kennedy_Space_Center-Orlando_Florida.html">John F. Kennedy Space Center</a></li>
+        <li><a href="http://www.tripadvisor.com/Attraction_Review-g34515-d102412-Reviews-SeaWorld_Orlando-Orlando_Florida.html">SeaWorld Orlando</a></li>
+        <li><a href="http://www.tripadvisor.com/Attraction_Review-g34515-d953101-Reviews-Disney_s_Hollywood_Studios-Orlando_Florida.html">Disney's Hollywood Studios</a></li>
+        <li><a href="http://www.tripadvisor.com/Attraction_Review-g34438-d147158-Reviews-American_Airlines_Arena-Miami_Florida.html">American Airlines Arena</a></li>
+      </ul>
+      <ul>
+        <li><a href="http://www.tripadvisor.com/Attraction_Review-g34438-d532100-Reviews-Freedom_Tower-Miami_Florida.html">Freedom Tower</a></li>
+        <li><a href="http://www.tripadvisor.com/Attraction_Review-g34345-d3417409-Reviews-Dry_Tortugas_National_Park-Key_West_Florida_Keys_Florida.html">Dry Tortugas National Park</a></li>
+        <li><a href="http://www.tripadvisor.com/Attraction_Review-g34345-d4048117-Reviews-Sunset_Pier-Key_West_Florida_Keys_Florida.html">Sunset Pier</a></li>
+        <li><a href="http://www.tripadvisor.com/Attraction_Review-g34345-d142741-Reviews-Dive_Key_West-Key_West_Florida_Keys_Florida.html">Dive Key West</a></li>
+        <li><a href="http://www.tripadvisor.com/Attraction_Review-g34345-d274104-Reviews-Southernmost_Point-Key_West_Florida_Keys_Florida.html">Southernmost Point</a></li>
+        <li><a href="http://www.tripadvisor.com/Attraction_Review-g34345-d4156575-Reviews-Hemingway_Home_Weddings-Key_West_Florida_Keys_Florida.html">Hemingway Home Weddings</a></li>
+        <li><a href="http://www.tripadvisor.com/Attraction_Review-g34345-d3417409-Reviews-Dry_Tortugas_National_Park-Key_West_Florida_Keys_Florida.html">Dry Tortugas National Park</a></li>
+        <li><a href="http://www.tripadvisor.com/Attractions-g28930-Activities-Florida.html"><strong>View all (201)</strong></a></li>
+      </ul>
+    </div>
+    <!--End of attraction div-->
+    <div id="location">
+      <h3>Famous location</h3>
+      <ul>
+        <li class="l1" id="map1" style="top:210px;left:55px;"><a href="#"><em>Key west is an island on the North American continent, at the southernmost tip of the Florida Keys.</em></a></li>
+        <li class="l2" id="map2" style="top:155px;left:192px;"><a href=""><em>Miami is a city located on the Atlantic coast in southeastern Florida and the county seat of Miami-Dade County. </em></a></li>
+        <li class="l2" id="map3" style="top:15px;left:153px;"><a href=""><em>Orlando located in Central Florida, and it is a popular tourist destination.</em></a></li>
+      </ul>
+    </div>
+  </div>
+  <!--End of main div--> 
+  <div id="secondary">
+  	<div id="photo">
+    	<h3>Photo albums</h3>
+    	<a href="#d"><img src="images/photo 8.JPG" alt="" width="100" height="100"></a>
+    	<a href="#d"><img src="images/photo 6.JPG" alt="" width="100" height="100"></a>
+		<a href="#d"><img src="images/photo 3.JPG" class="rotate" alt="" width="100" height="100"></a>
+		<a href="#d"><img src="images/photo 7.JPG" class="rotate" alt="" width="100" height="100"></a>
+		<a href="#d"><img src="images/photo 5.JPG" class="rotate" alt="" width="100" height="100"></a>
+		<a href="#d"><img src="images/photo 2.JPG" alt="" width="100" height="100"></a>
+		<a href="#d"><img src="images/photo 4.JPG" class="rotate" alt="" width="100" height="100"></a>
+		<a href="#d"><img src="images/photo 1.JPG" alt="" width="100" height="100"></a>
+    </div>
+    <form id="comments" action="comment.php" method="post">
+    	<fieldset>
+        	<legend>Comments</legend>
+           <div>
+           	<label for="text">Message for me:</label>
+            	<textarea name="comment" id="text" cols="20" rows="10"></textarea>
+           </div> 
+        </fieldset>
+        <div>
+			<input id="submit" type="submit"/>
+		</div>
+    </form>
+  </div>
+  <div id="footer">
+  <p>&copy;  2014<a href="#"> Sophie GAO.</a> All rights reserved.
+  </div>
+</div>
+<!--End of wrapper div-->
+</body>
+</html>
